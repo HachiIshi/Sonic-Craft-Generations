@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Sonic Craft Generations",
+    "icon": {
+      "value": "CUSTOM:CreativeTabIcon"
+    },
+    "showSearch": false
+  }
+}

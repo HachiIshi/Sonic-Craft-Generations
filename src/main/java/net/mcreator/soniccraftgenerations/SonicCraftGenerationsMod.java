@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.soniccraftgenerations.init.SonicCraftGenerationsModTabs;
 import net.mcreator.soniccraftgenerations.init.SonicCraftGenerationsModItems;
 
 import java.util.function.Supplier;
@@ -40,6 +41,8 @@ public class SonicCraftGenerationsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		SonicCraftGenerationsModItems.REGISTRY.register(bus);
+
+		SonicCraftGenerationsModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

@@ -11,7 +11,117 @@
           "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldGreenItem.java",
           "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_green.json"
         ]
-      }
+      },
+      "path": "~/All Emeralds/Chaos Emeralds"
+    },
+    {
+      "name": "ChaosEmeraldRed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_emerald_red",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_red.json",
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldRedItem.java"
+        ]
+      },
+      "path": "~/All Emeralds/Chaos Emeralds"
+    },
+    {
+      "name": "ChaosEmeraldBlue",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_emerald_blue",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_blue.json",
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldBlueItem.java"
+        ]
+      },
+      "path": "~/All Emeralds/Chaos Emeralds"
+    },
+    {
+      "name": "ChaosEmeraldCyan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_emerald_cyan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldCyanItem.java",
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_cyan.json"
+        ]
+      },
+      "path": "~/All Emeralds/Chaos Emeralds"
+    },
+    {
+      "name": "ChaosEmeraldWhite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_emerald_white",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_white.json",
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldWhiteItem.java"
+        ]
+      },
+      "path": "~/All Emeralds/Chaos Emeralds"
+    },
+    {
+      "name": "ChaosEmeraldPurple",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_emerald_purple",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_purple.json",
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldPurpleItem.java"
+        ]
+      },
+      "path": "~/All Emeralds/Chaos Emeralds"
+    },
+    {
+      "name": "ChaosEmeraldYellow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_emerald_yellow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldYellowItem.java",
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_yellow.json"
+        ]
+      },
+      "path": "~/All Emeralds/Chaos Emeralds"
+    },
+    {
+      "name": "CreativeTabIcon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_tab_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/item/CreativeTabIconItem.java",
+          "src/main/resources/assets/sonic_craft_generations/models/item/creative_tab_icon.json"
+        ]
+      },
+      "path": "~/Creative Menu"
+    },
+    {
+      "name": "SonicCraftGenerations",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sonic_craft_generations",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Menu"
     }
   ],
   "variable_elements": [],
@@ -20,12 +130,46 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.sonic_craft_generations.chaos_emerald_green": "Chaos Emerald"
+      "item_group.sonic_craft_generations.sonic_craft_generations": "Sonic Craft Generations",
+      "item.sonic_craft_generations.creative_tab_icon": "Creative Tab Icon",
+      "item.sonic_craft_generations.chaos_emerald_red": "Red Chaos Emerald",
+      "item.sonic_craft_generations.chaos_emerald_cyan": "Cyan Chaos Emerald",
+      "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
+      "item.sonic_craft_generations.chaos_emerald_yellow": "Yellow Chaos Emerald",
+      "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",
+      "item.sonic_craft_generations.chaos_emerald_white": "White Chaos Emerald",
+      "item.sonic_craft_generations.chaos_emerald_blue": "Blue Chaos Emerald"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "All Emeralds",
+        "children": [
+          {
+            "name": "Chaos Emeralds",
+            "children": []
+          },
+          {
+            "name": "Sol Emeralds",
+            "children": []
+          },
+          {
+            "name": "Super Emeralds",
+            "children": []
+          },
+          {
+            "name": "World Rings",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Creative Menu",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "sonic_craft_generations",

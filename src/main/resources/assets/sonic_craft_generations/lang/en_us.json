@@ -1,3 +1,11 @@
 {
-  "item.sonic_craft_generations.chaos_emerald_green": "Chaos Emerald"
+  "item_group.sonic_craft_generations.sonic_craft_generations": "Sonic Craft Generations",
+  "item.sonic_craft_generations.creative_tab_icon": "Creative Tab Icon",
+  "item.sonic_craft_generations.chaos_emerald_red": "Red Chaos Emerald",
+  "item.sonic_craft_generations.chaos_emerald_cyan": "Cyan Chaos Emerald",
+  "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
+  "item.sonic_craft_generations.chaos_emerald_yellow": "Yellow Chaos Emerald",
+  "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",
+  "item.sonic_craft_generations.chaos_emerald_white": "White Chaos Emerald",
+  "item.sonic_craft_generations.chaos_emerald_blue": "Blue Chaos Emerald"
 }

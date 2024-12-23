@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "greenchaosemerald",
+    "texture": "yellowchaosemerald",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Green Chaos Emerald",
+    "name": "Yellow Chaos Emerald",
     "rarity": "EPIC",
     "creativeTabs": [
       {

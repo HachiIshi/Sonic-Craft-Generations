@@ -3,18 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "greenchaosemerald",
+    "texture": "soniccraftgensicon",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Green Chaos Emerald",
-    "rarity": "EPIC",
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:SonicCraftGenerations"
-      }
-    ],
-    "stackSize": 1,
+    "name": "Creative Tab Icon",
+    "rarity": "COMMON",
+    "creativeTabs": [],
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -23,7 +19,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
