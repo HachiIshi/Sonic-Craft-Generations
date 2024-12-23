@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:end_crystal",
+    "texture": "greenchaosemerald",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
@@ -28,7 +28,7 @@
       "fixedValue": []
     },
     "glowCondition": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
