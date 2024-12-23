@@ -1,0 +1,46 @@
+{
+  "mod_elements": [
+    {
+      "name": "ChaosEmeraldGreen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_emerald_green",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldGreenItem.java",
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_green.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.sonic_craft_generations.chaos_emerald_green": "Chaos Emerald Green"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "sonic_craft_generations",
+    "modName": "Sonic Craft: Generations",
+    "version": "1.0.0",
+    "author": "J, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.soniccraftgenerations"
+  },
+  "mcreatorVersion": 202400232117
+}
