@@ -78,12 +78,13 @@ public class SonicCraftGenerationsModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.Race = original.Race;
-			clone.Hedgehog = original.Hedgehog;
-			clone.Fox = original.Fox;
 			clone.Echidna = original.Echidna;
-			clone.Charging = original.Charging;
 			clone.ChaosEnergy = original.ChaosEnergy;
+			clone.Hedgehog = original.Hedgehog;
+			clone.Charging = original.Charging;
+			clone.Fox = original.Fox;
 			clone.MaxChaosEnergy = original.MaxChaosEnergy;
+			clone.scg_playerRace = original.scg_playerRace;
 			if (!event.isWasDeath()) {
 			}
 			if (!event.getEntity().level().isClientSide()) {
@@ -126,12 +127,13 @@ public class SonicCraftGenerationsModVariables {
 
 	public static class PlayerVariables {
 		public String Race = "\"\"";
-		public boolean Hedgehog = false;
-		public boolean Fox = false;
 		public boolean Echidna = false;
-		public boolean Charging = false;
 		public double ChaosEnergy = 0;
+		public boolean Hedgehog = false;
+		public boolean Charging = false;
+		public boolean Fox = false;
 		public double MaxChaosEnergy = 200.0;
+		public String scg_playerRace = "\"minecraftDefault\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -141,24 +143,26 @@ public class SonicCraftGenerationsModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("Race", Race);
-			nbt.putBoolean("Hedgehog", Hedgehog);
-			nbt.putBoolean("Fox", Fox);
 			nbt.putBoolean("Echidna", Echidna);
-			nbt.putBoolean("Charging", Charging);
 			nbt.putDouble("ChaosEnergy", ChaosEnergy);
+			nbt.putBoolean("Hedgehog", Hedgehog);
+			nbt.putBoolean("Charging", Charging);
+			nbt.putBoolean("Fox", Fox);
 			nbt.putDouble("MaxChaosEnergy", MaxChaosEnergy);
+			nbt.putString("scg_playerRace", scg_playerRace);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			Race = nbt.getString("Race");
-			Hedgehog = nbt.getBoolean("Hedgehog");
-			Fox = nbt.getBoolean("Fox");
 			Echidna = nbt.getBoolean("Echidna");
-			Charging = nbt.getBoolean("Charging");
 			ChaosEnergy = nbt.getDouble("ChaosEnergy");
+			Hedgehog = nbt.getBoolean("Hedgehog");
+			Charging = nbt.getBoolean("Charging");
+			Fox = nbt.getBoolean("Fox");
 			MaxChaosEnergy = nbt.getDouble("MaxChaosEnergy");
+			scg_playerRace = nbt.getString("scg_playerRace");
 		}
 	}
 
@@ -193,12 +197,13 @@ public class SonicCraftGenerationsModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level().getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Race = message.data.Race;
-					variables.Hedgehog = message.data.Hedgehog;
-					variables.Fox = message.data.Fox;
 					variables.Echidna = message.data.Echidna;
-					variables.Charging = message.data.Charging;
 					variables.ChaosEnergy = message.data.ChaosEnergy;
+					variables.Hedgehog = message.data.Hedgehog;
+					variables.Charging = message.data.Charging;
+					variables.Fox = message.data.Fox;
 					variables.MaxChaosEnergy = message.data.MaxChaosEnergy;
+					variables.scg_playerRace = message.data.scg_playerRace;
 				}
 			});
 			context.setPacketHandled(true);

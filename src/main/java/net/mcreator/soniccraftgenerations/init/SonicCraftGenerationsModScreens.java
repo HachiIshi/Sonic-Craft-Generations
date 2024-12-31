@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.soniccraftgenerations.client.gui.RaceguiScreen;
+import net.mcreator.soniccraftgenerations.client.gui.MilesElectricScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SonicCraftGenerationsModScreens {
@@ -19,6 +20,7 @@ public class SonicCraftGenerationsModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(SonicCraftGenerationsModMenus.RACEGUI.get(), RaceguiScreen::new);
+			MenuScreens.register(SonicCraftGenerationsModMenus.MILES_ELECTRIC.get(), MilesElectricScreen::new);
 		});
 	}
 }

@@ -22,8 +22,8 @@
       "registry_name": "chaos_emerald_red",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldRedItem.java",
-          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_red.json"
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_red.json",
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldRedItem.java"
         ]
       },
       "path": "~/All Emeralds/Chaos Emeralds"
@@ -50,8 +50,8 @@
       "registry_name": "chaos_emerald_cyan",
       "metadata": {
         "files": [
-          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_cyan.json",
-          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldCyanItem.java"
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldCyanItem.java",
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_cyan.json"
         ]
       },
       "path": "~/All Emeralds/Chaos Emeralds"
@@ -194,6 +194,20 @@
         ]
       },
       "path": "~/Race/hedgehog"
+    },
+    {
+      "name": "MilesElectric",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miles_electric",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/client/gui/MilesElectricScreen.java",
+          "src/main/java/net/mcreator/soniccraftgenerations/world/inventory/MilesElectricMenu.java"
+        ]
+      },
+      "path": "~/UIs"
     }
   ],
   "variable_elements": [
@@ -204,25 +218,7 @@
       "value": "\"\""
     },
     {
-      "name": "Hedgehog",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "Fox",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
       "name": "Echidna",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "Charging",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -234,10 +230,34 @@
       "value": "0"
     },
     {
+      "name": "Hedgehog",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Charging",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Fox",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
       "name": "MaxChaosEnergy",
       "type": "number",
       "scope": "player_persistent",
       "value": "200.0"
+    },
+    {
+      "name": "scg_playerRace",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"minecraftDefault\""
     }
   ],
   "sound_elements": [],
@@ -266,11 +286,11 @@
         "name": "All Emeralds",
         "children": [
           {
-            "name": "Chaos Emeralds",
+            "name": "Sol Emeralds",
             "children": []
           },
           {
-            "name": "Sol Emeralds",
+            "name": "Chaos Emeralds",
             "children": []
           },
           {
@@ -285,6 +305,10 @@
       },
       {
         "name": "Creative Menu",
+        "children": []
+      },
+      {
+        "name": "UIs",
         "children": []
       },
       {
@@ -303,6 +327,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Player",
+        "children": []
       }
     ]
   },
@@ -317,13 +345,8 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "kleidersplayerrenderer",
-      "geckolib",
-      "playeranimator"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.soniccraftgenerations"
   },
   "mcreatorVersion": 202400232117
