@@ -126,7 +126,7 @@
     {
       "name": "MilesElectric",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "miles_electric",
       "metadata": {
@@ -201,11 +201,11 @@
         "children": []
       },
       {
-        "name": "Race",
+        "name": "Player",
         "children": []
       },
       {
-        "name": "Player",
+        "name": "Race",
         "children": []
       }
     ]
