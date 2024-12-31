@@ -27,11 +27,9 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 250;
+		this.imageHeight = 150;
 	}
-
-	private static final ResourceLocation texture = new ResourceLocation("sonic_craft_generations:textures/screens/miles_electric.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -45,7 +43,9 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("sonic_craft_generations:textures/screens/mileselectric.png"), this.leftPos + -55, this.topPos + -1, 0, 0, 350, 150, 350, 150);
+
 		RenderSystem.disableBlend();
 	}
 
