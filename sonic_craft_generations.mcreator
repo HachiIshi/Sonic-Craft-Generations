@@ -124,7 +124,14 @@
       "path": "~/Creative Menu"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Race",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
@@ -167,6 +174,10 @@
       },
       {
         "name": "Creative Menu",
+        "children": []
+      },
+      {
+        "name": "Race",
         "children": []
       }
     ]
