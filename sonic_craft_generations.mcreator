@@ -122,9 +122,30 @@
         "files": []
       },
       "path": "~/Creative Menu"
+    },
+    {
+      "name": "MilesElectric",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miles_electric",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/client/gui/MilesElectricScreen.java",
+          "src/main/java/net/mcreator/soniccraftgenerations/world/inventory/MilesElectricMenu.java"
+        ]
+      },
+      "path": "~/UIs"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "scg_playerRace",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"minecraftDefault\""
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
@@ -167,6 +188,14 @@
       },
       {
         "name": "Creative Menu",
+        "children": []
+      },
+      {
+        "name": "UIs",
+        "children": []
+      },
+      {
+        "name": "Player",
         "children": []
       }
     ]

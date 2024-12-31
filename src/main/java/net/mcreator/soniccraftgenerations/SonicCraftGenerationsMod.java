@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.soniccraftgenerations.init.SonicCraftGenerationsModTabs;
+import net.mcreator.soniccraftgenerations.init.SonicCraftGenerationsModMenus;
 import net.mcreator.soniccraftgenerations.init.SonicCraftGenerationsModItems;
 
 import java.util.function.Supplier;
@@ -44,6 +45,7 @@ public class SonicCraftGenerationsMod {
 
 		SonicCraftGenerationsModTabs.REGISTRY.register(bus);
 
+		SonicCraftGenerationsModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
