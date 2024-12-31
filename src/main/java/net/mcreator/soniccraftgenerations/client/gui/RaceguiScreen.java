@@ -52,6 +52,13 @@ public class RaceguiScreen extends AbstractContainerScreen<RaceguiMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("sonic_craft_generations:textures/screens/echidnaicon-export.png"), this.leftPos + 126, this.topPos + -18, 0, 0, 32, 28, 32, 28);
+
+		guiGraphics.blit(new ResourceLocation("sonic_craft_generations:textures/screens/foxicon.png"), this.leftPos + -18, this.topPos + -18, 0, 0, 32, 26, 32, 26);
+
+		guiGraphics.blit(new ResourceLocation("sonic_craft_generations:textures/screens/hedgehogicon.png"), this.leftPos + -154, this.topPos + -19, 0, 0, 32, 26, 32, 26);
+
 		RenderSystem.disableBlend();
 	}
 

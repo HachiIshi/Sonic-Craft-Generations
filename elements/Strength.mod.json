@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "attribute",
+  "definition": {
+    "description": "Strength",
+    "minValue": 2.0,
+    "maxValue": 1000000.0,
+    "defaultValue": 2.0,
+    "isPersistent": true,
+    "entities": []
+  }
+}
