@@ -77,6 +77,7 @@ public class SonicCraftGenerationsModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.scg_playerRace = original.scg_playerRace;
+			clone.Race = original.Race;
 			if (!event.isWasDeath()) {
 			}
 			if (!event.getEntity().level().isClientSide()) {
@@ -119,6 +120,7 @@ public class SonicCraftGenerationsModVariables {
 
 	public static class PlayerVariables {
 		public String scg_playerRace = "\"minecraftDefault\"";
+		public String Race = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -128,12 +130,14 @@ public class SonicCraftGenerationsModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("scg_playerRace", scg_playerRace);
+			nbt.putString("Race", Race);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			scg_playerRace = nbt.getString("scg_playerRace");
+			Race = nbt.getString("Race");
 		}
 	}
 
@@ -168,6 +172,7 @@ public class SonicCraftGenerationsModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level().getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.scg_playerRace = message.data.scg_playerRace;
+					variables.Race = message.data.Race;
 				}
 			});
 			context.setPacketHandled(true);

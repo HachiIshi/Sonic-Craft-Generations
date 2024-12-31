@@ -144,6 +144,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"minecraftDefault\""
+    },
+    {
+      "name": "Race",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -169,11 +175,11 @@
         "name": "All Emeralds",
         "children": [
           {
-            "name": "Chaos Emeralds",
+            "name": "Sol Emeralds",
             "children": []
           },
           {
-            "name": "Sol Emeralds",
+            "name": "Chaos Emeralds",
             "children": []
           },
           {
@@ -192,6 +198,10 @@
       },
       {
         "name": "UIs",
+        "children": []
+      },
+      {
+        "name": "Race",
         "children": []
       },
       {
