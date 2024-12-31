@@ -256,6 +256,50 @@
         ]
       },
       "path": "~/KeyBinds/KeyProcedures"
+    },
+    {
+      "name": "CurrentHealth",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_health",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "MaxHealth",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_health",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "Strength",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
+    },
+    {
+      "name": "Defense",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes"
     }
   ],
   "variable_elements": [
@@ -317,7 +361,6 @@
       "gui.sonic_craft_generations.racegui.button_fox": "Fox",
       "item.sonic_craft_generations.creative_tab_icon": "Creative Tab Icon",
       "gui.sonic_craft_generations.racegui.button_hedgehog": "Hedgehog",
-      "key.sonic_craft_generations.menu_open": "Menu Open",
       "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_white": "White Chaos Emerald",
@@ -354,12 +397,25 @@
         ]
       },
       {
+        "name": "Attributes",
+        "children": []
+      },
+      {
         "name": "Creative Menu",
         "children": []
       },
       {
         "name": "UIs",
         "children": []
+      },
+      {
+        "name": "KeyBinds",
+        "children": [
+          {
+            "name": "KeyProcedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Race",
@@ -381,15 +437,6 @@
       {
         "name": "Player",
         "children": []
-      },
-      {
-        "name": "KeyBinds",
-        "children": [
-          {
-            "name": "KeyProcedures",
-            "children": []
-          }
-        ]
       }
     ]
   },

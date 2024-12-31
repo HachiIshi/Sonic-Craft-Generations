@@ -54,6 +54,33 @@
           "x": 329,
           "y": 147
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "echidnaicon-export.png",
+          "use1Xscale": false,
+          "x": 340,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "foxicon.png",
+          "use1Xscale": false,
+          "x": 196,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hedgehogicon.png",
+          "use1Xscale": false,
+          "x": 60,
+          "y": 101
+        }
       }
     ],
     "gridSettings": {
