@@ -57,20 +57,6 @@
       "path": "~/All Emeralds/Chaos Emeralds"
     },
     {
-      "name": "ChaosEmeraldWhite",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chaos_emerald_white",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_white.json",
-          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldWhiteItem.java"
-        ]
-      },
-      "path": "~/All Emeralds/Chaos Emeralds"
-    },
-    {
       "name": "ChaosEmeraldPurple",
       "type": "item",
       "compiles": true,
@@ -300,6 +286,20 @@
         "files": []
       },
       "path": "~/Attributes"
+    },
+    {
+      "name": "ChaosEmeraldWhite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_emerald_white",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_white.json",
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldWhiteItem.java"
+        ]
+      },
+      "path": "~/All Emeralds/Chaos Emeralds"
     }
   ],
   "variable_elements": [
@@ -361,6 +361,7 @@
       "gui.sonic_craft_generations.racegui.button_fox": "Fox",
       "item.sonic_craft_generations.creative_tab_icon": "Creative Tab Icon",
       "gui.sonic_craft_generations.racegui.button_hedgehog": "Hedgehog",
+      "key.sonic_craft_generations.menu_open": "Menu Open",
       "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_white": "White Chaos Emerald",

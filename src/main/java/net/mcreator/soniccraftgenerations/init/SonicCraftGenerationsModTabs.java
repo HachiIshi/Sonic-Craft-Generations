@@ -22,9 +22,9 @@ public class SonicCraftGenerationsModTabs {
 				tabData.accept(SonicCraftGenerationsModItems.CHAOS_EMERALD_RED.get());
 				tabData.accept(SonicCraftGenerationsModItems.CHAOS_EMERALD_BLUE.get());
 				tabData.accept(SonicCraftGenerationsModItems.CHAOS_EMERALD_CYAN.get());
-				tabData.accept(SonicCraftGenerationsModItems.CHAOS_EMERALD_WHITE.get());
 				tabData.accept(SonicCraftGenerationsModItems.CHAOS_EMERALD_PURPLE.get());
 				tabData.accept(SonicCraftGenerationsModItems.CHAOS_EMERALD_YELLOW.get());
+				tabData.accept(SonicCraftGenerationsModItems.CHAOS_EMERALD_WHITE.get());
 			})
 
 			.build());
