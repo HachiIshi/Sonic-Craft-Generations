@@ -1,0 +1,67 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_hedgehog",
+          "text": "Hedgehog",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "HedgehogButton"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 40,
+          "y": 147
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_fox",
+          "text": "Fox",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FoxButton"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 196,
+          "y": 147
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_echidna",
+          "text": "Echidna",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "EchidnaButton"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 329,
+          "y": 147
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -22,8 +22,8 @@
       "registry_name": "chaos_emerald_red",
       "metadata": {
         "files": [
-          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_red.json",
-          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldRedItem.java"
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldRedItem.java",
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_red.json"
         ]
       },
       "path": "~/All Emeralds/Chaos Emeralds"
@@ -50,8 +50,8 @@
       "registry_name": "chaos_emerald_cyan",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldCyanItem.java",
-          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_cyan.json"
+          "src/main/resources/assets/sonic_craft_generations/models/item/chaos_emerald_cyan.json",
+          "src/main/java/net/mcreator/soniccraftgenerations/item/ChaosEmeraldCyanItem.java"
         ]
       },
       "path": "~/All Emeralds/Chaos Emeralds"
@@ -122,6 +122,78 @@
         "files": []
       },
       "path": "~/Creative Menu"
+    },
+    {
+      "name": "HedgehogButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hedgehog_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/HedgehogButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Race/hedgehog"
+    },
+    {
+      "name": "EchidnaButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echidna_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/EchidnaButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Race/hedgehog"
+    },
+    {
+      "name": "FoxButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fox_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/FoxButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Race/hedgehog"
+    },
+    {
+      "name": "Racegui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racegui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/world/inventory/RaceguiMenu.java",
+          "src/main/java/net/mcreator/soniccraftgenerations/client/gui/RaceguiScreen.java",
+          "src/main/java/net/mcreator/soniccraftgenerations/network/RaceguiButtonMessage.java"
+        ]
+      },
+      "path": "~/Race/hedgehog"
     }
   ],
   "variable_elements": [
@@ -130,6 +202,42 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "Hedgehog",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Fox",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Echidna",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Charging",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ChaosEnergy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MaxChaosEnergy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "200.0"
     }
   ],
   "sound_elements": [],
@@ -138,13 +246,16 @@
   "language_map": {
     "en_us": {
       "item_group.sonic_craft_generations.sonic_craft_generations": "Sonic Craft Generations",
+      "gui.sonic_craft_generations.racegui.button_fox": "Fox",
       "item.sonic_craft_generations.creative_tab_icon": "Creative Tab Icon",
-      "item.sonic_craft_generations.chaos_emerald_red": "Red Chaos Emerald",
-      "item.sonic_craft_generations.chaos_emerald_cyan": "Cyan Chaos Emerald",
+      "gui.sonic_craft_generations.racegui.button_hedgehog": "Hedgehog",
       "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
-      "item.sonic_craft_generations.chaos_emerald_yellow": "Yellow Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_white": "White Chaos Emerald",
+      "item.sonic_craft_generations.chaos_emerald_red": "Red Chaos Emerald",
+      "item.sonic_craft_generations.chaos_emerald_cyan": "Cyan Chaos Emerald",
+      "gui.sonic_craft_generations.racegui.button_echidna": "Echidna",
+      "item.sonic_craft_generations.chaos_emerald_yellow": "Yellow Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_blue": "Blue Chaos Emerald"
     }
   },
@@ -178,7 +289,20 @@
       },
       {
         "name": "Race",
-        "children": []
+        "children": [
+          {
+            "name": "hedgehog",
+            "children": []
+          },
+          {
+            "name": "Echidna",
+            "children": []
+          },
+          {
+            "name": "Fox",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -193,8 +317,13 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "geckolib",
+      "playeranimator"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.soniccraftgenerations"
   },
   "mcreatorVersion": 202400232117
