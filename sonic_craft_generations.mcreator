@@ -256,10 +256,10 @@
   ],
   "variable_elements": [
     {
-      "name": "Race",
-      "type": "string",
+      "name": "SuperForm",
+      "type": "logic",
       "scope": "player_persistent",
-      "value": "\"\""
+      "value": "false"
     },
     {
       "name": "Echidna",

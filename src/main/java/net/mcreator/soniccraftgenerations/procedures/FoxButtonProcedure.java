@@ -11,7 +11,7 @@ public class FoxButtonProcedure {
 		{
 			String _setval = "Fox";
 			entity.getCapability(SonicCraftGenerationsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Race = _setval;
+				capability.scg_playerRace = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

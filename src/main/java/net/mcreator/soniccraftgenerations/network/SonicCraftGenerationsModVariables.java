@@ -77,7 +77,7 @@ public class SonicCraftGenerationsModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			clone.Race = original.Race;
+			clone.SuperForm = original.SuperForm;
 			clone.Echidna = original.Echidna;
 			clone.ChaosEnergy = original.ChaosEnergy;
 			clone.Hedgehog = original.Hedgehog;
@@ -126,7 +126,7 @@ public class SonicCraftGenerationsModVariables {
 	}
 
 	public static class PlayerVariables {
-		public String Race = "\"\"";
+		public boolean SuperForm = false;
 		public boolean Echidna = false;
 		public double ChaosEnergy = 0;
 		public boolean Hedgehog = false;
@@ -142,7 +142,7 @@ public class SonicCraftGenerationsModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putString("Race", Race);
+			nbt.putBoolean("SuperForm", SuperForm);
 			nbt.putBoolean("Echidna", Echidna);
 			nbt.putDouble("ChaosEnergy", ChaosEnergy);
 			nbt.putBoolean("Hedgehog", Hedgehog);
@@ -155,7 +155,7 @@ public class SonicCraftGenerationsModVariables {
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			Race = nbt.getString("Race");
+			SuperForm = nbt.getBoolean("SuperForm");
 			Echidna = nbt.getBoolean("Echidna");
 			ChaosEnergy = nbt.getDouble("ChaosEnergy");
 			Hedgehog = nbt.getBoolean("Hedgehog");
@@ -196,7 +196,7 @@ public class SonicCraftGenerationsModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level().getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.Race = message.data.Race;
+					variables.SuperForm = message.data.SuperForm;
 					variables.Echidna = message.data.Echidna;
 					variables.ChaosEnergy = message.data.ChaosEnergy;
 					variables.Hedgehog = message.data.Hedgehog;
