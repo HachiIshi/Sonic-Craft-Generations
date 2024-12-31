@@ -26,10 +26,10 @@ public class SonicCraftGenerationsModItems {
 	public static final RegistryObject<Item> CHAOS_EMERALD_RED = REGISTRY.register("chaos_emerald_red", () -> new ChaosEmeraldRedItem());
 	public static final RegistryObject<Item> CHAOS_EMERALD_BLUE = REGISTRY.register("chaos_emerald_blue", () -> new ChaosEmeraldBlueItem());
 	public static final RegistryObject<Item> CHAOS_EMERALD_CYAN = REGISTRY.register("chaos_emerald_cyan", () -> new ChaosEmeraldCyanItem());
+	public static final RegistryObject<Item> CHAOS_EMERALD_WHITE = REGISTRY.register("chaos_emerald_white", () -> new ChaosEmeraldWhiteItem());
 	public static final RegistryObject<Item> CHAOS_EMERALD_PURPLE = REGISTRY.register("chaos_emerald_purple", () -> new ChaosEmeraldPurpleItem());
 	public static final RegistryObject<Item> CHAOS_EMERALD_YELLOW = REGISTRY.register("chaos_emerald_yellow", () -> new ChaosEmeraldYellowItem());
 	public static final RegistryObject<Item> CREATIVE_TAB_ICON = REGISTRY.register("creative_tab_icon", () -> new CreativeTabIconItem());
-	public static final RegistryObject<Item> CHAOS_EMERALD_WHITE = REGISTRY.register("chaos_emerald_white", () -> new ChaosEmeraldWhiteItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
