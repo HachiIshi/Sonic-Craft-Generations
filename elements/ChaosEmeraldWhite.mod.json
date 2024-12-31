@@ -2,9 +2,9 @@
   "_fv": 66,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 2,
     "texture": "whitechaosemerald",
-    "customModelName": "Normal",
+    "customModelName": "emeraldvoxtest",
     "customProperties": {},
     "states": [],
     "name": "White Chaos Emerald",
