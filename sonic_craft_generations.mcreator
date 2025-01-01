@@ -311,7 +311,7 @@
           }
         ]
       },
-      "path": "~/UIs"
+      "path": "~/UIs/StatProcedures"
     },
     {
       "name": "ESusedForHealth",
@@ -330,7 +330,7 @@
           }
         ]
       },
-      "path": "~/UIs"
+      "path": "~/UIs/StatProcedures"
     },
     {
       "name": "CDCommand",
@@ -353,7 +353,7 @@
           }
         ]
       },
-      "path": "~/UIs"
+      "path": "~/UIs/StatProcedures"
     },
     {
       "name": "CDCommandPro",
@@ -366,7 +366,7 @@
           "src/main/java/net/mcreator/soniccraftgenerations/command/CDCommandProCommand.java"
         ]
       },
-      "path": "~/UIs"
+      "path": "~/UIs/StatProcedures"
     },
     {
       "name": "CdVAR",
@@ -473,6 +473,186 @@
         ]
       },
       "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "ChaosEnergyChargeOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_energy_charge_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/ChaosEnergyChargeOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/KeyBinds"
+    },
+    {
+      "name": "ChaosEnergyChargeOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_energy_charge_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/ChaosEnergyChargeOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/KeyBinds"
+    },
+    {
+      "name": "ChaosEnergyCharge",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_energy_charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/network/ChaosEnergyChargeMessage.java"
+        ]
+      },
+      "path": "~/KeyBinds/KeyProcedures"
+    },
+    {
+      "name": "ChargeTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charge_true",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/ChargeTrueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/KeyBinds"
+    },
+    {
+      "name": "ChaosEnergyOver",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaos_energy_over",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/ChaosEnergyOverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/KeyBinds"
+    },
+    {
+      "name": "CDusedForCE",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_dused_for_ce",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/CDusedForCEProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "CeVAR",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ce_var",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/CeVARProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "CeVARMce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ce_var_mce",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/CeVARMceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/client/screens/OverlayOverlay.java"
+        ]
+      },
+      "path": "~/UIs"
+    },
+    {
+      "name": "CESet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ce_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/CESetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
     }
   ],
   "variable_elements": [
@@ -529,6 +709,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "energytimer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -542,6 +728,7 @@
       "gui.sonic_craft_generations.racegui.button_hedgehog": "Hedgehog",
       "key.sonic_craft_generations.miles_menu_open": "MilesStatGui ",
       "attribute.sonic_craft_generations.max_health": "Max Health",
+      "key.sonic_craft_generations.chaos_energy_charge": "Chaos Energy Charge",
       "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
       "attribute.sonic_craft_generations.current_health": "Current Health",
       "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",

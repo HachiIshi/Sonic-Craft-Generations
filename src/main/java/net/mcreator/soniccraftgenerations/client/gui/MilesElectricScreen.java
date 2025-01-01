@@ -12,6 +12,7 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.soniccraftgenerations.world.inventory.MilesElectricMenu;
 import net.mcreator.soniccraftgenerations.procedures.StrVARProcedure;
 import net.mcreator.soniccraftgenerations.procedures.HealthProcedure;
+import net.mcreator.soniccraftgenerations.procedures.CeVARProcedure;
 import net.mcreator.soniccraftgenerations.procedures.CdVARProcedure;
 import net.mcreator.soniccraftgenerations.network.MilesElectricButtonMessage;
 import net.mcreator.soniccraftgenerations.SonicCraftGenerationsMod;
@@ -78,7 +79,10 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 				StrVARProcedure.execute(entity), 60, 69, -16724992, false);
 		guiGraphics.drawString(this.font,
 
-				CdVARProcedure.execute(entity), 111, 36, -16724992, false);
+				CdVARProcedure.execute(entity), 103, 33, -16724992, false);
+		guiGraphics.drawString(this.font,
+
+				CeVARProcedure.execute(entity), 60, 99, -16724992, false);
 	}
 
 	@Override
@@ -97,6 +101,10 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 		guistate.put("button:imagebutton_new_piskel1png_11", imagebutton_new_piskel1png_11);
 		this.addRenderableWidget(imagebutton_new_piskel1png_11);
 		imagebutton_new_piskel1png_12 = new ImageButton(this.leftPos + 44, this.topPos + 97, 15, 15, 0, 0, 15, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_12.png"), 15, 30, e -> {
+			if (true) {
+				SonicCraftGenerationsMod.PACKET_HANDLER.sendToServer(new MilesElectricButtonMessage(2, x, y, z));
+				MilesElectricButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_new_piskel1png_12", imagebutton_new_piskel1png_12);
 		this.addRenderableWidget(imagebutton_new_piskel1png_12);

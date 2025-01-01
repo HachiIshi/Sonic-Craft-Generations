@@ -14,6 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.soniccraftgenerations.world.inventory.MilesElectricMenu;
 import net.mcreator.soniccraftgenerations.procedures.ESusedForStrengthProcedure;
 import net.mcreator.soniccraftgenerations.procedures.ESusedForHealthProcedure;
+import net.mcreator.soniccraftgenerations.procedures.CDusedForCEProcedure;
 import net.mcreator.soniccraftgenerations.SonicCraftGenerationsMod;
 
 import java.util.function.Supplier;
@@ -66,6 +67,10 @@ public class MilesElectricButtonMessage {
 		if (buttonID == 0) {
 
 			ESusedForStrengthProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			CDusedForCEProcedure.execute(entity);
 		}
 		if (buttonID == 3) {
 

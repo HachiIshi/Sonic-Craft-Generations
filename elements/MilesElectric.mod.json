@@ -48,6 +48,9 @@
           "name": "imagebutton_new_piskel1png_12",
           "image": "new_piskel-1.png_1.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "CDusedForCE"
+          },
           "x": 133,
           "y": 142
         }
@@ -109,8 +112,24 @@
             "value": -16724992,
             "falpha": 0.0
           },
-          "x": 200,
-          "y": 81
+          "x": 192,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_ce_var",
+          "text": {
+            "fixedValue": "",
+            "name": "CeVAR"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 149,
+          "y": 144
         }
       }
     ],

@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.soniccraftgenerations.network.MilesMenuOpenMessage;
+import net.mcreator.soniccraftgenerations.network.ChaosEnergyChargeMessage;
 import net.mcreator.soniccraftgenerations.SonicCraftGenerationsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -33,10 +34,30 @@ public class SonicCraftGenerationsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping CHAOS_ENERGY_CHARGE = new KeyMapping("key.sonic_craft_generations.chaos_energy_charge", GLFW.GLFW_KEY_C, "key.categories.scg") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				SonicCraftGenerationsMod.PACKET_HANDLER.sendToServer(new ChaosEnergyChargeMessage(0, 0));
+				ChaosEnergyChargeMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				CHAOS_ENERGY_CHARGE_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - CHAOS_ENERGY_CHARGE_LASTPRESS);
+				SonicCraftGenerationsMod.PACKET_HANDLER.sendToServer(new ChaosEnergyChargeMessage(1, dt));
+				ChaosEnergyChargeMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
+	private static long CHAOS_ENERGY_CHARGE_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(MILES_MENU_OPEN);
+		event.register(CHAOS_ENERGY_CHARGE);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -45,6 +66,7 @@ public class SonicCraftGenerationsModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				MILES_MENU_OPEN.consumeClick();
+				CHAOS_ENERGY_CHARGE.consumeClick();
 			}
 		}
 	}
