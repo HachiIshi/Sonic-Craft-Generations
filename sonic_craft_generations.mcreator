@@ -653,6 +653,26 @@
         ]
       },
       "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "RaceVAR",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_var",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/RaceVARProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
     }
   ],
   "variable_elements": [

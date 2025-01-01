@@ -131,6 +131,22 @@
           "x": 149,
           "y": 144
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_race_var",
+          "text": {
+            "fixedValue": "",
+            "name": "RaceVAR"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 128,
+          "y": 79
+        }
       }
     ],
     "gridSettings": {

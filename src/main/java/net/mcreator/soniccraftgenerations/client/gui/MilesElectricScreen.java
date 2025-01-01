@@ -11,6 +11,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.soniccraftgenerations.world.inventory.MilesElectricMenu;
 import net.mcreator.soniccraftgenerations.procedures.StrVARProcedure;
+import net.mcreator.soniccraftgenerations.procedures.RaceVARProcedure;
 import net.mcreator.soniccraftgenerations.procedures.HealthProcedure;
 import net.mcreator.soniccraftgenerations.procedures.CeVARProcedure;
 import net.mcreator.soniccraftgenerations.procedures.CdVARProcedure;
@@ -83,6 +84,9 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 		guiGraphics.drawString(this.font,
 
 				CeVARProcedure.execute(entity), 60, 99, -16724992, false);
+		guiGraphics.drawString(this.font,
+
+				RaceVARProcedure.execute(entity), 39, 34, -16724992, false);
 	}
 
 	@Override
