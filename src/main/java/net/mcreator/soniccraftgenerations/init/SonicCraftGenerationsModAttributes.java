@@ -10,10 +10,13 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLConstructModEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.EntityAttributeModificationEvent;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
 import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.EntityType;
 
 import net.mcreator.soniccraftgenerations.SonicCraftGenerationsMod;
 
@@ -34,5 +37,22 @@ public class SonicCraftGenerationsModAttributes {
 
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
+		event.add(EntityType.PLAYER, CURRENTHEALTH.get());
+		event.add(EntityType.PLAYER, CURRENTHEALTH.get());
+		event.add(EntityType.PLAYER, MAXHEALTH.get());
+		event.add(EntityType.PLAYER, MAXHEALTH.get());
+		event.add(EntityType.PLAYER, STRENGTH.get());
+		event.add(EntityType.PLAYER, STRENGTH.get());
+	}
+
+	@Mod.EventBusSubscriber
+	private class Utils {
+		@SubscribeEvent
+		public static void persistAttributes(PlayerEvent.Clone event) {
+			Player oldP = event.getOriginal();
+			Player newP = (Player) event.getEntity();
+			newP.getAttribute(MAXHEALTH.get()).setBaseValue(oldP.getAttribute(MAXHEALTH.get()).getBaseValue());
+			newP.getAttribute(STRENGTH.get()).setBaseValue(oldP.getAttribute(STRENGTH.get()).getBaseValue());
+		}
 	}
 }

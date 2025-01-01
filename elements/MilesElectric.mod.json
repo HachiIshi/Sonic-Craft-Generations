@@ -18,6 +18,100 @@
           "x": 34,
           "y": 44
         }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_new_piskel1png_1",
+          "image": "new_piskel-1.png_1.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ESusedForStrength"
+          },
+          "x": 133,
+          "y": 111
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_new_piskel1png_11",
+          "image": "new_piskel-1.png_1.png",
+          "hoveredImage": "",
+          "x": 133,
+          "y": 126
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_new_piskel1png_12",
+          "image": "new_piskel-1.png_1.png",
+          "hoveredImage": "",
+          "x": 133,
+          "y": 142
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_new_piskel1png_13",
+          "image": "new_piskel-1.png_1.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ESusedForHealth"
+          },
+          "x": 133,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_health",
+          "text": {
+            "fixedValue": "",
+            "name": "Health"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 149,
+          "y": 100
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "",
+            "name": "StrVAR"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 149,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_cd_var",
+          "text": {
+            "fixedValue": "",
+            "name": "CdVAR"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 200,
+          "y": 81
+        }
       }
     ],
     "gridSettings": {

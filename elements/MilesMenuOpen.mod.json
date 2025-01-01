@@ -3,10 +3,10 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "M",
-    "keyBindingName": "Menu Open",
+    "keyBindingName": "MilesStatGui ",
     "keyBindingCategoryKey": "scgens",
     "onKeyPressed": {
-      "name": "MilesElectricOpen"
+      "name": "MilesMenuOpenOnKeyPressed"
     }
   }
 }

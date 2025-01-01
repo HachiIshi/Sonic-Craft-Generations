@@ -189,59 +189,12 @@
       "registry_name": "miles_electric",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/network/MilesElectricButtonMessage.java",
           "src/main/java/net/mcreator/soniccraftgenerations/client/gui/MilesElectricScreen.java",
           "src/main/java/net/mcreator/soniccraftgenerations/world/inventory/MilesElectricMenu.java"
         ]
       },
       "path": "~/UIs"
-    },
-    {
-      "name": "MenuOpen",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "menu_open",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/soniccraftgenerations/network/MenuOpenMessage.java"
-        ]
-      },
-      "path": "~/KeyBinds"
-    },
-    {
-      "name": "MilesElectricOpen",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "miles_electric_open",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/soniccraftgenerations/procedures/MilesElectricOpenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/KeyBinds/KeyProcedures"
     },
     {
       "name": "CurrentHealth",
@@ -300,6 +253,226 @@
         ]
       },
       "path": "~/All Emeralds/Chaos Emeralds"
+    },
+    {
+      "name": "StrVAR",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "str_var",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/StrVARProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "Health",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "health",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/HealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "ESusedForStrength",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "e_sused_for_strength",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/ESusedForStrengthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs"
+    },
+    {
+      "name": "ESusedForHealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "e_sused_for_health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/ESusedForHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs"
+    },
+    {
+      "name": "CDCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cd_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/CDCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs"
+    },
+    {
+      "name": "CDCommandPro",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cd_command_pro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/command/CDCommandProCommand.java"
+        ]
+      },
+      "path": "~/UIs"
+    },
+    {
+      "name": "CdVAR",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cd_var",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/CdVARProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "MilesMenuOpenOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miles_menu_open_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/MilesMenuOpenOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/KeyBinds"
+    },
+    {
+      "name": "MilesMenuOpen",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miles_menu_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/network/MilesMenuOpenMessage.java"
+        ]
+      },
+      "path": "~/KeyBinds/KeyProcedures"
+    },
+    {
+      "name": "StrengthOptimized",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_optimized",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/StrengthOptimizedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "HealthOptimized",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "health_optimized",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/HealthOptimizedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UIs/StatProcedures"
     }
   ],
   "variable_elements": [
@@ -350,6 +523,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"minecraftDefault\""
+    },
+    {
+      "name": "ChaosDrive",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -361,13 +540,16 @@
       "gui.sonic_craft_generations.racegui.button_fox": "Fox",
       "item.sonic_craft_generations.creative_tab_icon": "Creative Tab Icon",
       "gui.sonic_craft_generations.racegui.button_hedgehog": "Hedgehog",
-      "key.sonic_craft_generations.menu_open": "Menu Open",
+      "key.sonic_craft_generations.miles_menu_open": "MilesStatGui ",
+      "attribute.sonic_craft_generations.max_health": "Max Health",
       "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
+      "attribute.sonic_craft_generations.current_health": "Current Health",
       "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_white": "White Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_red": "Red Chaos Emerald",
       "key.categories.scgens": "Sonic Craft Generations",
       "item.sonic_craft_generations.chaos_emerald_cyan": "Cyan Chaos Emerald",
+      "attribute.sonic_craft_generations.strength": "Strength",
       "gui.sonic_craft_generations.racegui.button_echidna": "Echidna",
       "item.sonic_craft_generations.chaos_emerald_yellow": "Yellow Chaos Emerald",
       "item.sonic_craft_generations.chaos_emerald_blue": "Blue Chaos Emerald"
@@ -407,7 +589,12 @@
       },
       {
         "name": "UIs",
-        "children": []
+        "children": [
+          {
+            "name": "StatProcedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "KeyBinds",

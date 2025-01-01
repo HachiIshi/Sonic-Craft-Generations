@@ -3,16 +3,17 @@
   "gui.sonic_craft_generations.racegui.button_fox": "Fox",
   "item.sonic_craft_generations.creative_tab_icon": "Creative Tab Icon",
   "gui.sonic_craft_generations.racegui.button_hedgehog": "Hedgehog",
+  "key.sonic_craft_generations.miles_menu_open": "MilesStatGui ",
   "attribute.sonic_craft_generations.max_health": "Max Health",
   "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
   "attribute.sonic_craft_generations.current_health": "Current Health",
   "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",
   "item.sonic_craft_generations.chaos_emerald_white": "White Chaos Emerald",
   "item.sonic_craft_generations.chaos_emerald_red": "Red Chaos Emerald",
+  "key.categories.scgens": "Sonic Craft Generations",
   "item.sonic_craft_generations.chaos_emerald_cyan": "Cyan Chaos Emerald",
   "attribute.sonic_craft_generations.strength": "Strength",
   "gui.sonic_craft_generations.racegui.button_echidna": "Echidna",
-  "attribute.sonic_craft_generations.defense": "Defense",
   "item.sonic_craft_generations.chaos_emerald_yellow": "Yellow Chaos Emerald",
   "item.sonic_craft_generations.chaos_emerald_blue": "Blue Chaos Emerald"
 }

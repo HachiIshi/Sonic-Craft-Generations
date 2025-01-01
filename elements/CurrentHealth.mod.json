@@ -7,6 +7,13 @@
     "maxValue": 1000000.0,
     "defaultValue": 20.0,
     "isPersistent": false,
-    "entities": []
+    "entities": [
+      {
+        "value": "EntityPlayer"
+      },
+      {
+        "value": "EntityPlayerMP"
+      }
+    ]
   }
 }
