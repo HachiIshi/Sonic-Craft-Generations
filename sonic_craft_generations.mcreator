@@ -189,9 +189,9 @@
       "registry_name": "miles_electric",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/soniccraftgenerations/network/MilesElectricButtonMessage.java",
           "src/main/java/net/mcreator/soniccraftgenerations/client/gui/MilesElectricScreen.java",
-          "src/main/java/net/mcreator/soniccraftgenerations/world/inventory/MilesElectricMenu.java"
+          "src/main/java/net/mcreator/soniccraftgenerations/world/inventory/MilesElectricMenu.java",
+          "src/main/java/net/mcreator/soniccraftgenerations/network/MilesElectricButtonMessage.java"
         ]
       },
       "path": "~/UIs"

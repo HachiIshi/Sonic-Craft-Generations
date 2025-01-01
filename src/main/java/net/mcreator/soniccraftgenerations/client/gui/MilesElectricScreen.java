@@ -56,7 +56,9 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("sonic_craft_generations:textures/screens/mileselectric.png"), this.leftPos + -55, this.topPos + -1, 0, 0, 350, 150, 350, 150);
+		guiGraphics.blit(new ResourceLocation("sonic_craft_generations:textures/screens/mileselectric_final.png"), this.leftPos + -49, this.topPos + 0, 0, 0, 350, 150, 350, 150);
+
+		guiGraphics.blit(new ResourceLocation("sonic_craft_generations:textures/screens/mileselectricscreen.png"), this.leftPos + -49, this.topPos + 0, 0, 0, 350, 150, 350, 150);
 
 		RenderSystem.disableBlend();
 	}
@@ -74,25 +76,25 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
 
-				HealthProcedure.execute(entity), 60, 55, -16724992, false);
+				HealthProcedure.execute(entity), 67, 57, -16724992, false);
 		guiGraphics.drawString(this.font,
 
-				StrVARProcedure.execute(entity), 60, 69, -16724992, false);
+				StrVARProcedure.execute(entity), 67, 71, -16724992, false);
 		guiGraphics.drawString(this.font,
 
-				CdVARProcedure.execute(entity), 103, 33, -16724992, false);
+				CdVARProcedure.execute(entity), 174, 42, -16724992, false);
 		guiGraphics.drawString(this.font,
 
-				CeVARProcedure.execute(entity), 60, 99, -16724992, false);
+				CeVARProcedure.execute(entity), 67, 101, -16724992, false);
 		guiGraphics.drawString(this.font,
 
-				RaceVARProcedure.execute(entity), 39, 34, -16724992, false);
+				RaceVARProcedure.execute(entity), 50, 41, -16724992, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_new_piskel1png_1 = new ImageButton(this.leftPos + 44, this.topPos + 66, 15, 15, 0, 0, 15, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_1.png"), 15, 30, e -> {
+		imagebutton_new_piskel1png_1 = new ImageButton(this.leftPos + 48, this.topPos + 68, 16, 16, 0, 0, 16, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_1.png"), 16, 32, e -> {
 			if (true) {
 				SonicCraftGenerationsMod.PACKET_HANDLER.sendToServer(new MilesElectricButtonMessage(0, x, y, z));
 				MilesElectricButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -100,11 +102,11 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 		});
 		guistate.put("button:imagebutton_new_piskel1png_1", imagebutton_new_piskel1png_1);
 		this.addRenderableWidget(imagebutton_new_piskel1png_1);
-		imagebutton_new_piskel1png_11 = new ImageButton(this.leftPos + 44, this.topPos + 81, 15, 15, 0, 0, 15, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_11.png"), 15, 30, e -> {
+		imagebutton_new_piskel1png_11 = new ImageButton(this.leftPos + 48, this.topPos + 82, 16, 16, 0, 0, 16, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_11.png"), 16, 32, e -> {
 		});
 		guistate.put("button:imagebutton_new_piskel1png_11", imagebutton_new_piskel1png_11);
 		this.addRenderableWidget(imagebutton_new_piskel1png_11);
-		imagebutton_new_piskel1png_12 = new ImageButton(this.leftPos + 44, this.topPos + 97, 15, 15, 0, 0, 15, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_12.png"), 15, 30, e -> {
+		imagebutton_new_piskel1png_12 = new ImageButton(this.leftPos + 48, this.topPos + 98, 16, 16, 0, 0, 16, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_12.png"), 16, 32, e -> {
 			if (true) {
 				SonicCraftGenerationsMod.PACKET_HANDLER.sendToServer(new MilesElectricButtonMessage(2, x, y, z));
 				MilesElectricButtonMessage.handleButtonAction(entity, 2, x, y, z);
@@ -112,7 +114,7 @@ public class MilesElectricScreen extends AbstractContainerScreen<MilesElectricMe
 		});
 		guistate.put("button:imagebutton_new_piskel1png_12", imagebutton_new_piskel1png_12);
 		this.addRenderableWidget(imagebutton_new_piskel1png_12);
-		imagebutton_new_piskel1png_13 = new ImageButton(this.leftPos + 44, this.topPos + 51, 15, 15, 0, 0, 15, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_13.png"), 15, 30, e -> {
+		imagebutton_new_piskel1png_13 = new ImageButton(this.leftPos + 48, this.topPos + 54, 16, 16, 0, 0, 16, new ResourceLocation("sonic_craft_generations:textures/screens/atlas/imagebutton_new_piskel1png_13.png"), 16, 32, e -> {
 			if (true) {
 				SonicCraftGenerationsMod.PACKET_HANDLER.sendToServer(new MilesElectricButtonMessage(3, x, y, z));
 				MilesElectricButtonMessage.handleButtonAction(entity, 3, x, y, z);
