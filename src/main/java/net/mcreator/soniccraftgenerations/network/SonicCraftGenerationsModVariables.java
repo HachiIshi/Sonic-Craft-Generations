@@ -86,6 +86,7 @@ public class SonicCraftGenerationsModVariables {
 			clone.MaxChaosEnergy = original.MaxChaosEnergy;
 			clone.scg_playerRace = original.scg_playerRace;
 			clone.ChaosDrive = original.ChaosDrive;
+			clone.Form = original.Form;
 			if (!event.isWasDeath()) {
 				clone.energytimer = original.energytimer;
 			}
@@ -138,6 +139,7 @@ public class SonicCraftGenerationsModVariables {
 		public String scg_playerRace = "\"minecraftDefault\"";
 		public double ChaosDrive = 0;
 		public double energytimer = 0;
+		public String Form = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -156,6 +158,7 @@ public class SonicCraftGenerationsModVariables {
 			nbt.putString("scg_playerRace", scg_playerRace);
 			nbt.putDouble("ChaosDrive", ChaosDrive);
 			nbt.putDouble("energytimer", energytimer);
+			nbt.putString("Form", Form);
 			return nbt;
 		}
 
@@ -171,6 +174,7 @@ public class SonicCraftGenerationsModVariables {
 			scg_playerRace = nbt.getString("scg_playerRace");
 			ChaosDrive = nbt.getDouble("ChaosDrive");
 			energytimer = nbt.getDouble("energytimer");
+			Form = nbt.getString("Form");
 		}
 	}
 
@@ -214,6 +218,7 @@ public class SonicCraftGenerationsModVariables {
 					variables.scg_playerRace = message.data.scg_playerRace;
 					variables.ChaosDrive = message.data.ChaosDrive;
 					variables.energytimer = message.data.energytimer;
+					variables.Form = message.data.Form;
 				}
 			});
 			context.setPacketHandled(true);
