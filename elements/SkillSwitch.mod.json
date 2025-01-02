@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Skill Switch",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SkillSwitchOnKeyPressed"
+    }
+  }
+}

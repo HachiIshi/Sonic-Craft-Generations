@@ -11,61 +11,52 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "image",
-        "data": {
-          "image": "mileselectric.png",
-          "use1Xscale": false,
-          "x": 34,
-          "y": 44
-        }
-      },
-      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_new_piskel1png_1",
-          "image": "new_piskel-1.png_1.png",
-          "hoveredImage": "",
+          "image": "upgradebutton.png",
+          "hoveredImage": "upgradebuttonclicked.png",
           "onClick": {
             "name": "ESusedForStrength"
           },
-          "x": 133,
-          "y": 111
+          "x": 137,
+          "y": 113
         }
       },
       {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_new_piskel1png_11",
-          "image": "new_piskel-1.png_1.png",
-          "hoveredImage": "",
-          "x": 133,
-          "y": 126
+          "image": "upgradebutton.png",
+          "hoveredImage": "upgradebuttonclicked.png",
+          "x": 137,
+          "y": 127
         }
       },
       {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_new_piskel1png_12",
-          "image": "new_piskel-1.png_1.png",
-          "hoveredImage": "",
+          "image": "upgradebutton.png",
+          "hoveredImage": "upgradebuttonclicked.png",
           "onClick": {
             "name": "CDusedForCE"
           },
-          "x": 133,
-          "y": 142
+          "x": 137,
+          "y": 143
         }
       },
       {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_new_piskel1png_13",
-          "image": "new_piskel-1.png_1.png",
-          "hoveredImage": "",
+          "image": "upgradebutton.png",
+          "hoveredImage": "upgradebuttonclicked.png",
           "onClick": {
             "name": "ESusedForHealth"
           },
-          "x": 133,
-          "y": 96
+          "x": 137,
+          "y": 99
         }
       },
       {
@@ -80,8 +71,8 @@
             "value": -16724992,
             "falpha": 0.0
           },
-          "x": 149,
-          "y": 100
+          "x": 156,
+          "y": 102
         }
       },
       {
@@ -96,8 +87,8 @@
             "value": -16724992,
             "falpha": 0.0
           },
-          "x": 149,
-          "y": 114
+          "x": 156,
+          "y": 116
         }
       },
       {
@@ -112,8 +103,8 @@
             "value": -16724992,
             "falpha": 0.0
           },
-          "x": 192,
-          "y": 78
+          "x": 263,
+          "y": 87
         }
       },
       {
@@ -128,8 +119,8 @@
             "value": -16724992,
             "falpha": 0.0
           },
-          "x": 149,
-          "y": 144
+          "x": 156,
+          "y": 146
         }
       },
       {
@@ -144,8 +135,26 @@
             "value": -16724992,
             "falpha": 0.0
           },
-          "x": 128,
-          "y": 79
+          "x": 139,
+          "y": 86
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mileselectric_final.png",
+          "use1Xscale": false,
+          "x": 40,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mileselectricscreen.png",
+          "use1Xscale": false,
+          "x": 40,
+          "y": 45
         }
       }
     ],

@@ -673,6 +673,99 @@
         ]
       },
       "path": "~/UIs/StatProcedures"
+    },
+    {
+      "name": "EntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/EntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/xpSystem"
+    },
+    {
+      "name": "XpVar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_var",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/XpVarProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Var"
+    },
+    {
+      "name": "UpdateTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/UpdateTickProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/xpSystem"
+    },
+    {
+      "name": "Levelup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levelup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/LevelupProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/xpSystem"
+    },
+    {
+      "name": "SkillSwitchOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_switch_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/procedures/SkillSwitchOnKeyPressedProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/KeyBinds"
+    },
+    {
+      "name": "SkillSwitch",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_switch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/soniccraftgenerations/network/SkillSwitchMessage.java"
+        ]
+      },
+      "path": "~/KeyBinds/KeyProcedures"
     }
   ],
   "variable_elements": [
@@ -741,6 +834,30 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "skillSlot",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "xp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "tp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -755,6 +872,7 @@
       "key.sonic_craft_generations.miles_menu_open": "MilesStatGui ",
       "attribute.sonic_craft_generations.max_health": "Max Health",
       "key.sonic_craft_generations.chaos_energy_charge": "Chaos Energy Charge",
+      "key.sonic_craft_generations.skill_switch": "Skill Switch",
       "item.sonic_craft_generations.chaos_emerald_purple": "Purple Chaos Emerald",
       "attribute.sonic_craft_generations.current_health": "Current Health",
       "item.sonic_craft_generations.chaos_emerald_green": "Green Chaos Emerald",
@@ -771,6 +889,10 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "Var",
+        "children": []
+      },
       {
         "name": "All Emeralds",
         "children": [
@@ -794,6 +916,10 @@
       },
       {
         "name": "Attributes",
+        "children": []
+      },
+      {
+        "name": "xpSystem",
         "children": []
       },
       {
