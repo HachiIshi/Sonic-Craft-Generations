@@ -86,6 +86,10 @@ public class SonicCraftGenerationsModVariables {
 			clone.MaxChaosEnergy = original.MaxChaosEnergy;
 			clone.scg_playerRace = original.scg_playerRace;
 			clone.ChaosDrive = original.ChaosDrive;
+			clone.skillSlot = original.skillSlot;
+			clone.xp = original.xp;
+			clone.level = original.level;
+			clone.tp = original.tp;
 			if (!event.isWasDeath()) {
 				clone.energytimer = original.energytimer;
 			}
@@ -138,6 +142,10 @@ public class SonicCraftGenerationsModVariables {
 		public String scg_playerRace = "\"minecraftDefault\"";
 		public double ChaosDrive = 0;
 		public double energytimer = 0;
+		public double skillSlot = 0;
+		public double xp = 0;
+		public double level = 0;
+		public double tp = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -156,6 +164,10 @@ public class SonicCraftGenerationsModVariables {
 			nbt.putString("scg_playerRace", scg_playerRace);
 			nbt.putDouble("ChaosDrive", ChaosDrive);
 			nbt.putDouble("energytimer", energytimer);
+			nbt.putDouble("skillSlot", skillSlot);
+			nbt.putDouble("xp", xp);
+			nbt.putDouble("level", level);
+			nbt.putDouble("tp", tp);
 			return nbt;
 		}
 
@@ -171,6 +183,10 @@ public class SonicCraftGenerationsModVariables {
 			scg_playerRace = nbt.getString("scg_playerRace");
 			ChaosDrive = nbt.getDouble("ChaosDrive");
 			energytimer = nbt.getDouble("energytimer");
+			skillSlot = nbt.getDouble("skillSlot");
+			xp = nbt.getDouble("xp");
+			level = nbt.getDouble("level");
+			tp = nbt.getDouble("tp");
 		}
 	}
 
@@ -214,6 +230,10 @@ public class SonicCraftGenerationsModVariables {
 					variables.scg_playerRace = message.data.scg_playerRace;
 					variables.ChaosDrive = message.data.ChaosDrive;
 					variables.energytimer = message.data.energytimer;
+					variables.skillSlot = message.data.skillSlot;
+					variables.xp = message.data.xp;
+					variables.level = message.data.level;
+					variables.tp = message.data.tp;
 				}
 			});
 			context.setPacketHandled(true);

@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "net.mcreator.soniccraftgenerations.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.sonic_craft_generations.refmap.json",
+  "mixins": [],
+  "client": [],
+  "minVersion": "0.8"
+}
