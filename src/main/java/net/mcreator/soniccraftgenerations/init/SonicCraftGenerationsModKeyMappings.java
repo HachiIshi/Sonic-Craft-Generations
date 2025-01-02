@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcreator.soniccraftgenerations.network.SkillSwitchMessage;
 import net.mcreator.soniccraftgenerations.network.MilesMenuOpenMessage;
 import net.mcreator.soniccraftgenerations.network.ChaosEnergyChargeMessage;
 import net.mcreator.soniccraftgenerations.SonicCraftGenerationsMod;
@@ -52,12 +53,26 @@ public class SonicCraftGenerationsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping SKILL_SWITCH = new KeyMapping("key.sonic_craft_generations.skill_switch", GLFW.GLFW_KEY_C, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				SonicCraftGenerationsMod.PACKET_HANDLER.sendToServer(new SkillSwitchMessage(0, 0));
+				SkillSwitchMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long CHAOS_ENERGY_CHARGE_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(MILES_MENU_OPEN);
 		event.register(CHAOS_ENERGY_CHARGE);
+		event.register(SKILL_SWITCH);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -67,6 +82,7 @@ public class SonicCraftGenerationsModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				MILES_MENU_OPEN.consumeClick();
 				CHAOS_ENERGY_CHARGE.consumeClick();
+				SKILL_SWITCH.consumeClick();
 			}
 		}
 	}
