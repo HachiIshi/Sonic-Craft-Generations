@@ -272,7 +272,7 @@
           }
         ]
       },
-      "path": "~/UIs/StatProcedures"
+      "path": "~/Var"
     },
     {
       "name": "Health",
@@ -292,7 +292,7 @@
           }
         ]
       },
-      "path": "~/UIs/StatProcedures"
+      "path": "~/Var"
     },
     {
       "name": "ESusedForStrength",
@@ -386,7 +386,7 @@
           }
         ]
       },
-      "path": "~/UIs/StatProcedures"
+      "path": "~/Var"
     },
     {
       "name": "MilesMenuOpenOnKeyPressed",
@@ -600,7 +600,7 @@
           }
         ]
       },
-      "path": "~/UIs/StatProcedures"
+      "path": "~/Var"
     },
     {
       "name": "CeVARMce",
@@ -620,7 +620,7 @@
           }
         ]
       },
-      "path": "~/UIs/StatProcedures"
+      "path": "~/Var"
     },
     {
       "name": "Overlay",
@@ -672,7 +672,7 @@
           }
         ]
       },
-      "path": "~/UIs/StatProcedures"
+      "path": "~/Var"
     },
     {
       "name": "EntityDies",
@@ -708,7 +708,12 @@
         "files": [
           "src/main/java/net/mcreator/soniccraftgenerations/procedures/XpVarProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Var"
     },
@@ -722,7 +727,12 @@
         "files": [
           "src/main/java/net/mcreator/soniccraftgenerations/procedures/UpdateTickProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/xpSystem"
     },
@@ -736,7 +746,12 @@
         "files": [
           "src/main/java/net/mcreator/soniccraftgenerations/procedures/LevelupProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/xpSystem"
     },
@@ -750,7 +765,12 @@
         "files": [
           "src/main/java/net/mcreator/soniccraftgenerations/procedures/SkillSwitchOnKeyPressedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/KeyBinds"
     },
