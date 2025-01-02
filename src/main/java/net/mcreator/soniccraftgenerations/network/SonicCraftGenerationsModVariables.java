@@ -90,7 +90,6 @@ public class SonicCraftGenerationsModVariables {
 			clone.skillSlot = original.skillSlot;
 			clone.level = original.level;
 			clone.xp = original.xp;
-			clone.tp = original.tp;
 			if (!event.isWasDeath()) {
 				clone.energytimer = original.energytimer;
 			}
@@ -147,7 +146,6 @@ public class SonicCraftGenerationsModVariables {
 		public double skillSlot = 0;
 		public double level = 0;
 		public double xp = 0;
-		public double tp = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -170,7 +168,6 @@ public class SonicCraftGenerationsModVariables {
 			nbt.putDouble("skillSlot", skillSlot);
 			nbt.putDouble("level", level);
 			nbt.putDouble("xp", xp);
-			nbt.putDouble("tp", tp);
 			return nbt;
 		}
 
@@ -190,7 +187,6 @@ public class SonicCraftGenerationsModVariables {
 			skillSlot = nbt.getDouble("skillSlot");
 			level = nbt.getDouble("level");
 			xp = nbt.getDouble("xp");
-			tp = nbt.getDouble("tp");
 		}
 	}
 
@@ -238,7 +234,6 @@ public class SonicCraftGenerationsModVariables {
 					variables.skillSlot = message.data.skillSlot;
 					variables.level = message.data.level;
 					variables.xp = message.data.xp;
-					variables.tp = message.data.tp;
 				}
 			});
 			context.setPacketHandled(true);
